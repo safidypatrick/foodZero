@@ -1,0 +1,171 @@
+.footer-page {
+    background-color: hsl(244, 12%, 13%);
+
+    .footer-wrapper {
+        padding: 3rem 4rem;
+        color: white;
+        
+
+        .footer-desktop {
+            display: flex;
+
+            .first-bloc {
+                flex: auto;
+    
+                .footer-logo {
+                    padding-bottom: 3rem;
+                }
+                .footer-media {
+                    display: flex;
+                    
+    
+                    .media-item {
+                        padding-right: 0.5rem;
+                    }
+                }
+            }
+    
+            .footer-menu {
+                flex: auto;
+    
+                .menu-item {
+                    padding-bottom: 5px;
+                    color: hsl(0, 0%, 98%);
+                }
+            }
+    
+            .other-menu {
+                flex: auto;
+    
+                .other-item {
+                    padding-bottom: 5px;
+                }
+            }
+    
+            .bloc-wrapper {
+                .button-bloc {
+                    display: flex;
+                    padding-bottom: 2rem;
+    
+                    .input-update {
+                        padding-right: 1rem;
+                        .input-box {
+                            border-radius: 3rem;
+                            padding: 1rem 1rem;
+                        }
+                    }
+    
+                    .go-button {
+                        color: white;
+                        font-weight: 700;
+                        background-color: hsl(224, 92%, 48%);
+                        border-radius: 3rem;
+                        padding: 0.6rem 1rem;
+                        width: 40px;
+                        text-align: center;
+                    }
+                }
+    
+                .text-copyright {
+                    color: hsl(227, 12%, 61%);
+                }
+            } 
+        }
+
+        .footer-mobile {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-page {
+        background-color: hsl(233, 12%, 13%);
+
+        .footer-wrapper {
+            padding: 2rem 2rem;
+            color: white;
+            display: flex;
+
+            .footer-desktop {
+                display: none;
+            }
+                    
+            .footer-mobile {
+                display: block;
+
+                .bloc-wrapper {
+                    .button-bloc {
+                        display: flex;
+                        padding-bottom: 2rem;
+        
+                        .input-update {
+                            padding-right: 1rem;
+                            .input-box {
+                                border-radius: 3rem;
+                                padding: 1rem 1rem;
+                                width: 100%;
+                            }
+                        }
+        
+                        .go-button {
+                            color: white;
+                            font-weight: 700;
+                            background-color: hsl(224, 92%, 48%);
+                            border-radius: 3rem;
+                            padding: 0.6rem 1rem;
+                            width: 40px;
+                            text-align: center;
+                            margin-left: 2rem;
+                        }
+                    }
+                } 
+
+                .menu-content {
+                    display: flex;
+                    margin-left: 3rem;
+
+                    .footer-menu {
+                        flex: auto;
+            
+                        .menu-item {
+                            padding-bottom: 5px;
+                            color: hsl(0, 0%, 98%);
+                        }
+                    }
+            
+                    .other-menu {
+                        .other-item {
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+
+                .first-bloc {
+                    padding-top: 2rem;
+
+                    .footer-media {
+                        display: flex;                   
+
+                        .media-item {
+                            flex: auto;
+                            text-align: center;
+                        }
+                    }
+
+                    .footer-logo {
+                        text-align: center;
+                        padding-top: 1.5rem;
+                        padding-bottom: 1.5rem;
+                    }
+                }
+
+                       
+                .text-copyright {
+                    text-align: center;
+                    color: hsl(227, 12%, 61%);
+                }
+            } 
+        }
+    }
+}

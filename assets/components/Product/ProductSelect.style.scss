@@ -1,0 +1,38 @@
+.produit-select {
+    position: relative;
+    .produit-input {
+        border: 1px solid #ccc;
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    input {
+        outline: none;
+    }
+
+    .produit-list {
+        border: 1px solid #ccc;
+        position: absolute;
+        z-index: 50;
+        background-color: white;
+        width: 100%;
+
+        &.show {
+            transform: scale(1);
+        }
+
+        &.hide {
+            transform: scale(0);
+        }
+
+        .produit-item {
+            padding: 1rem 2rem;
+
+            &:hover {
+                background-color: antiquewhite;
+                cursor: pointer;
+            }
+        }
+    }
+}

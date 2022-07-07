@@ -1,0 +1,103 @@
+.hero-page {
+    .hero-wrapper {
+        padding: 3rem 4rem;
+
+        .hero-desktop {
+            display: flex;
+
+            .hero-content {
+                flex: auto;
+    
+                .hero-title {
+                    color: hsl(228, 39%, 23%);
+                    font-weight: 700;
+                    font-size: 50px;
+                }
+    
+                .hero-description {
+                    color: hsl(227, 12%, 61%);
+                    font-size: 16px;
+                }
+    
+                .click-button {
+                    .button-design {
+                        .button-content {
+                            color: white;
+                            background-color: hsl(224, 78%, 44%);
+                            border-radius: 3rem;
+                            padding: 0.6rem 1rem;
+                            width: 110px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .hero-mobile {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero-page {
+        .hero-wrapper {
+            padding: 2rem 2rem;
+            display: flex;
+            flex-direction: column;
+    
+            .hero-desktop {
+                display: none;
+            }
+
+            .hero-mobile {
+                display: block;
+
+                .hero-bloc {
+                    .bloc-wrapper {
+                        .bloc-image {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+    
+                .hero-content {
+        
+                    .hero-title {
+                        color: hsl(228, 39%, 23%);
+                        font-weight: 700;
+                        font-size: 40px;
+                        text-align: center;
+                    }
+        
+                    .hero-description {
+                        color: hsl(227, 12%, 61%);
+                        font-size: 16px;
+                        text-align: center;
+                    }
+        
+                    .click-button {
+                        .button-design {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding-top: 2rem;
+    
+                            .button-content {
+                                color: white;
+                                background-color: hsl(224, 78%, 44%);
+                                border-radius: 3rem;
+                                padding: 0.6rem 1rem;
+                                width: 110px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

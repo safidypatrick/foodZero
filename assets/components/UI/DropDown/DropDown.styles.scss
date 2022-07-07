@@ -1,0 +1,48 @@
+.dropdown {
+    position: absolute;
+    bottom: 2.5px;
+    right: 2.5px;
+    text-align: center;
+    z-index: 100;
+
+    .dropdown-button {
+        border-radius: 3px;
+        background-color: rgba(0, 0, 0, .125);
+        padding: 7px 4.5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: honeydew;
+        }
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, .55);
+        z-index: 100;
+        transform: scale(0);
+        transition: all ease-out 200ms;
+        transform-origin: top left;
+
+        &.visible {
+            transform: scale(1);
+            transition: all ease-in 200ms;
+        }
+
+        .dropdown-item {
+            z-index: 100;
+            padding: 7px 12.5px;
+            text-align: left;
+            font-size: 14px;
+            cursor: pointer;
+            white-space: nowrap;
+
+            &:hover {
+                background-color: gainsboro;
+            }
+        }
+    }
+}

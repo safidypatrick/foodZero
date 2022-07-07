@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body, html {
+    --scrollbarBG: #0f0f0f;
+    --thumbBG: #15db95;
+    scroll-behavior: smooth;
+    background-color: white;
+    font-family: 'Roboto';
+}
+
+.main-container {
+    margin-left: auto;
+    width: 100%;
+    padding: 2rem;
+    background-color: rgb(243, 242, 244);
+    min-height: 100vh;
+    max-height: 100vh;
+    padding-top: 95px;
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: 'Roboto';
+}
+
+button:disabled {
+    cursor: not-allowed !important;
+    opacity: .75 !important;
+}
+
+.spin-animation {
+    animation: spin 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@-webkit-keyframes spin {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@-moz-keyframes spin {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.custom-table-01 {
+    width: auto;
+    thead tr th {
+        border: 1px solid rgb(170, 170, 170);
+        padding: 10px 13px;
+    }
+
+    tbody tr td {
+        border: 1px solid rgb(170, 170, 170);
+        padding: 0;
+        padding: 7px 5px;
+    }
+}

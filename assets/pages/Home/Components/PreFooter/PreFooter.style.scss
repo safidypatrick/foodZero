@@ -1,0 +1,83 @@
+.prefooter-page {
+    background-color: hsl(244, 78%, 44%);
+    
+    
+    .prefooter-wrapper {
+        display: flex;
+        padding: 3rem 4rem;
+        overflow: hidden;
+        
+
+        .prefooter-title {
+            flex: auto;
+            color: white;
+            font-weight: 700;
+            font-size: 35px;
+        }
+
+        .prefooter-background {
+            position: absolute;
+            z-index: 25;
+            transform: translateY(-50%);
+        }
+
+        .prefooter-button {
+            .prefooter-style {
+                .prefooter-text {
+                    color:  hsl(224, 78%, 44%);
+                    background-color: white;
+                    border-radius: 3rem;
+                    padding: 0.6rem 1rem;
+                    width: 110px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .prefooter-page {
+        background-color:  hsl(224, 78%, 44%);
+        
+        
+        .prefooter-wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 4rem 4rem;
+            overflow: hidden;
+            
+    
+            .prefooter-title {
+                text-align: center;
+                color: white;
+                font-weight: 700;
+                font-size: 35px;
+                padding-bottom: 2rem;
+            }
+    
+            .prefooter-background {
+                position: absolute;
+                z-index: 25;
+                transform: translateY(-50%);
+            }
+    
+            .prefooter-button {
+                .prefooter-style {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    .prefooter-text {
+                        color:  hsl(224, 78%, 44%);
+                        background-color: white;
+                        border-radius: 3rem;
+                        padding: 0.6rem 1rem;
+                        width: 110px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.email-sender {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .email-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 40, .15);
+        backdrop-filter: saturate(50%) blur(1px);
+    }
+
+    .email-wrapper {
+        position: fixed;
+        bottom: 0;
+        right: 2.5rem;
+        z-index: 10;
+        width: 35%;
+        transition: all ease-out 400ms;
+
+        .email-container {
+            z-index: 15;
+            position: relative;
+            border-top-left-radius: 1%;
+            border-top-right-radius: 1%;
+            overflow: hidden;
+            .email-header {
+                background-color: #1383c3;
+                color: white;
+                padding: 1.5rem 4rem;
+            }
+    
+            .email-body {
+                padding: 1rem 4rem;
+                padding-top: 2rem;
+                padding-bottom: 3rem;
+                background-color: white;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+                textarea {
+                    height: 250px;
+                }
+            }
+        }
+    }
+    
+
+    &.show {
+        transform: scale(1);
+        .email-overlay {
+            display: block;
+        }
+
+        .email-wrapper {
+            transform: scaleY(1);
+            transition: all ease-in 400ms;
+            transform-origin: bottom;
+        }
+    }
+
+    &.hide {
+        transform: scale(0);
+        overflow: hidden;
+        .email-overlay {
+            display: none;
+        }
+
+        .email-wrapper {
+            transform: scaleY(0);
+            transition: all ease-out 400ms;
+            transform-origin: bottom;
+        }
+    }
+}

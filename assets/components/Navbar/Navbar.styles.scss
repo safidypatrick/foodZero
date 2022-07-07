@@ -1,0 +1,85 @@
+.user-menu {
+    padding: 0px 25px;
+
+    .user-wrapper {
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(255, 255, 255, .75);
+
+        .user-icon {
+            border: 1px solid rgba(255, 255, 255, .75);
+            border-radius: 100%;
+        }
+    }
+
+    .profil-menu {
+        transition: all ease-out 400ms;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background-color: #312E81;
+        transform-origin: top;
+        color: rgba(255, 255, 255, .75);
+        right: -225px;
+        overflow: hidden;
+        z-index: 500;
+
+        .profil-info {
+            height: 75px;
+            background-color: #6366F1;
+            padding: 10px 15px;
+            color: white;
+
+            .profil-username {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .profil-name {
+                font-size: 14px;
+                color: rgba(255, 255, 255, .85)
+            }
+
+            .profil-icon {
+                font-size: 18px;
+            }
+        }
+
+        .profil-action {
+            padding: 10px 15px;
+            color: white !important;
+
+            .menu-action {
+                padding: 7px 15px;
+                cursor: pointer;
+                margin-bottom: 2px;
+                background-color: rgba(0, 0, 0, .125);
+                transition: all ease-out 300ms;
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, .25);
+                    transition: all ease-in 300ms;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .profil-menu {
+            width: 225px;
+            right: 0;
+            transition: all cubic-bezier(0.55, 0.06, 0.68, 0.19) 400ms;
+        }
+    }
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
