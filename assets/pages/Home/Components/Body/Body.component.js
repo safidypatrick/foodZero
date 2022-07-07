@@ -10,10 +10,10 @@ const Body = () => {
                     <div className="body-title">View your new menu!</div>
                     <div className="body-description">
                         <p>
-                            Manage provides all the functionality your <br/>
-                            team needs without the complexity. Our <br/>
-                            software is tailor-made for modern digital <br/>
-                            product teams.
+                            
+                        Et olim licet otiosae sint tribus pacataeque centuriae et<br/>
+                         nulla suffragiorum certamina set Pompiliani redierin<br/>
+                         per omnes tamen quotquot sunt partes terrarum<br/>
                         </p>
                     </div>
                         <img src="images/food 1.jpg"/>
@@ -28,7 +28,7 @@ const Body = () => {
                             </div>
                             <div className="services-description">
                                 <p>
-                                    See how your day-to-day tasks fit into the wider vision. <br/>
+                                   lorem Upsum See how your day-to-day tasks fit into the wider vision. <br/>
                                     Go from tracking progess at the milestone level all the <br/>
                                     way done to the smallest of details. Never lose sight of <br/> the bigger picture again.
                                 </p>
